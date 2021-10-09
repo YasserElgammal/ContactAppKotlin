@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_app"
+    app:startDestination="@id/listFragment">
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.yasserelgammal.contactappkotlin.ui.fragments.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile" >
+        <argument
+            android:name="contactProfile"
+            app:argType="com.yasserelgammal.contactappkotlin.data.model.Person" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.yasserelgammal.contactappkotlin.ui.fragments.add.AddFragment"
+        android:label="AddFragment"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_addFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.yasserelgammal.contactappkotlin.ui.fragments.edit.EditFragment"
+        android:label="EditFragment"
+        tools:layout="@layout/fragment_edit" >
+        <argument
+            android:name="contactData"
+            app:argType="com.yasserelgammal.contactappkotlin.data.model.Person" />
+        <action
+            android:id="@+id/action_editFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.yasserelgammal.contactappkotlin.ui.fragments.list.ListFragment"
+        android:label="ListFragment"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_listFragment_to_editFragment"
+            app:destination="@id/editFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.yasserelgammal.contactappkotlin.ui.fragments.favorite.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+</navigation>

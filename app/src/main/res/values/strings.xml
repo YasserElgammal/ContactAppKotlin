@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Contacts App</string>
+    <string name="enter_name_hint">Enter Contact First and Last Name</string>
+    <string name="name">Name</string>
+    <string name="enter_phone_hint">Enter phone number</string>
+    <string name="phone">Phone</string>
+    <string name="enter_title_hint">Enter Title</string>
+    <string name="title">Title</string>
+    <string name="enter_address_hint">Enter Contact Address</string>
+    <string name="address">Address</string>
+    <string name="enter_note_hint">Enter Contact Note</string>
+    <string name="notes">Notes</string>
+    <string name="save_it">Save it</string>
+    <string name="choose_image">Choose Image</string>
+    <string name="name_needed">Name Needed</string>
+    <string name="title_needed">Title Needed</string>
+    <string name="phone_needed">Phone Needed</string>
+    <string name="address_needed">Address Needed</string>
+    <string name="notes_needed">Notes Needed</string>
+    <string name="nothing">Nothing happen !</string>
+    <string name="delete_all">Delete All</string>
+    <string name="about">About</string>
+    <string name="deleted">Item Deleted</string>
+    <string name="edit_user">Edit User</string>
+    <string name="contact_profile">Contact Profile</string>
+    <string name="add_user">Add User</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="label">Choose Group</string>
+    <string name="agree">Agree</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete_item">Remove this contact?</string>
+    <string name="group">Group</string>
+
+    <string-array name="groups">
+        <item>Family</item>
+        <item>Friends</item>
+        <item>Work</item>
+    </string-array>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">سجل الهاتف</string>
+    <string name="enter_name_hint">ادخل الاسم الأول واللقب</string>
+    <string name="enter_phone_hint">ادخل رقم الهاتف</string>
+    <string name="name">الاسم</string>
+    <string name="phone">رقم الهاتف</string>
+    <string name="enter_title_hint">ادخل الوظيفة</string>
+    <string name="title">العنوان</string>
+    <string name="enter_address_hint">ادخل العنوان</string>
+    <string name="address">العنوان</string>
+    <string name="enter_note_hint">ادخل أي ملاحظات</string>
+    <string name="save_it">احفظ الآن</string>
+    <string name="notes">ملاحظات</string>
+    <string name="choose_image">اختار صورة</string>
+    <string name="name_needed">الإسم مطلوب!</string>
+    <string name="title_needed">الوظيفة مطلوبة!</string>
+    <string name="phone_needed">رقم الهاتف مطلوب!</string>
+    <string name="address_needed">العنوان مطلوب !</string>
+    <string name="nothing">لم يحدث شئ!</string>
+    <string name="delete_all">حذف الجميع</string>
+    <string name="about">من أنا</string>
+    <string name="deleted">تم الحذف</string>
+    <string name="edit_user">تعديل جهة اتصال</string>
+    <string name="contact_profile">بيانات جهة الاتصال</string>
+    <string name="add_user">اضافة جهة اتصال</string>
+    <string name="notes_needed">الملاحظة مطلوبة</string>
+    <string name="label">Choose Group</string>
+
+</resources>
