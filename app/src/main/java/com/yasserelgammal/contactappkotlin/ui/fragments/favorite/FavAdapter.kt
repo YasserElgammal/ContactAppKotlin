@@ -39,26 +39,11 @@ class FavAdapter(private var interaction: ContactRecycleInteraction): RecyclerVi
 
         fun bind(contact: Person) {
             binding.apply {
-                tvNameShort.text = contact.name.first().toString().uppercase()
-//                tvTitle.text = contact.title
-//                tvNumber.text = contact.phoneNumber
-//                ivPerson.setImageResource(contact.image)
+                tvNameShort.text = contact.name
 
                 itemView.setOnClickListener {
                     interaction.onItemSelected(adapterPosition,contact)
                 }
-
-//                ivEdit.setOnClickListener {
-//                    interaction.onItemUpdate(adapterPosition,contact)
-//                }
-//
-//                ivCall.setOnClickListener {
-//                    interaction.onItemCall(adapterPosition, contact)
-//                }
-//
-//                ivDelete.setOnClickListener {
-//                    interaction.onItemDeleted(adapterPosition, contact)
-//                }
             }
         }
 
