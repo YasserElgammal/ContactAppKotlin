@@ -47,9 +47,9 @@ class ContactViewModel(application: Application) : AndroidViewModel(application)
             repository.favContact(fav, id)
         }
     }
-//
-//    fun searchDatabase(searchQuery: String): LiveData<List<Person>>{
-//        return repository.searchDatabase(searchQuery)
-//    }
+
+    fun searchDatabase(searchQuery: String): LiveData<List<Person>>{
+        return repository.getSearchContacts(searchQuery)
+    }
 
 }

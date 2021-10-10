@@ -25,6 +25,12 @@
     <string name="contact_profile">بيانات جهة الاتصال</string>
     <string name="add_user">اضافة جهة اتصال</string>
     <string name="notes_needed">الملاحظة مطلوبة</string>
-    <string name="label">Choose Group</string>
+    <string name="label">اختار المجموعة</string>
+    <string name="search">البحث</string>
+    <string name="delete_all_contacts_menu">حذف كافة جهات الاتصال</string>
+    <string name="agree">موافق</string>
+    <string name="cancel">إلغاء</string>
+    <string name="delete_item">حذف جهة الاتصال؟</string>
+    <string name="group">مجموعة</string>
 
 </resources>

@@ -25,12 +25,13 @@
     <string name="contact_profile">Contact Profile</string>
     <string name="add_user">Add User</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="label">Choose Group</string>
     <string name="agree">Agree</string>
     <string name="cancel">Cancel</string>
     <string name="delete_item">Remove this contact?</string>
     <string name="group">Group</string>
+    <string name="search">Search</string>
+    <string name="delete_all_contacts_menu">Delete all contacts</string>
 
     <string-array name="groups">
         <item>Family</item>

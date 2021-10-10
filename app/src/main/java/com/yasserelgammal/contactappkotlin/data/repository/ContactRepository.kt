@@ -29,4 +29,10 @@ class ContactRepository(private val contactDao: ContactDao) {
         contactDao.favContact(fav, id)
     }
 
+    //function to get searched Contacts in database
+    fun getSearchContacts(query: String): LiveData<List<Person>> {
+        return contactDao.searchContact(query)
+    }
+
+
 }
