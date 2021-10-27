@@ -38,8 +38,10 @@ class ListFragment : Fragment(), ContactRecycleInteraction, EasyPermissions.Perm
         // Inflate the layout for this fragment
         _binding = FragmentListBinding.inflate(inflater, container, false)
         // RecycleView
-        binding.myRecLayout.layoutManager = LinearLayoutManager(requireContext())
-        binding.myRecLayout.adapter = recAdapter
+        binding.apply {
+            myRecLayout.layoutManager = LinearLayoutManager(requireContext())
+            myRecLayout.adapter = recAdapter
+        }
         // observe data
         mContactViewModel.getAllData.observe(viewLifecycleOwner, { data ->
             recAdapter.setData(data)
@@ -51,6 +53,7 @@ class ListFragment : Fragment(), ContactRecycleInteraction, EasyPermissions.Perm
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         binding.floatAction.setOnClickListener {
             findNavController().navigate(R.id.action_listFragment_to_addFragment)
         }
