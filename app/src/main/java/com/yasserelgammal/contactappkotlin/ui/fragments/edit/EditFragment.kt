@@ -80,6 +80,7 @@ class EditFragment : Fragment() {
 
     }
 
+    // toggle function between drawable
     private fun drawableSelected(){
         binding.apply {
 
@@ -109,6 +110,7 @@ class EditFragment : Fragment() {
         }
     }
 
+    // get data from edit text and update process
     private fun getDataToUpdate(){
         val eName = binding.inputLayoutNameEdit.editText?.text.toString().trim()
         val ePhone = binding.iLayoutPhoneEdit.editText?.text.toString().trim()

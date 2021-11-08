@@ -3,6 +3,9 @@ package com.yasserelgammal.contactappkotlin.ui.fragments.common
 import androidx.recyclerview.widget.DiffUtil
 import com.yasserelgammal.contactappkotlin.data.model.Person
 
+/*
+compare and handle recyclerView update
+ */
 class ContactDiffUtil(private val oldContactList: List<Person>, private val newContactList: List<Person>):
     DiffUtil.Callback(){
     override fun getOldListSize(): Int {

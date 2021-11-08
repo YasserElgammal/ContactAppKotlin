@@ -20,11 +20,6 @@ class ProfileFragment : Fragment() {
     private var contactId:Int?= null
     private val mContactViewModelViewModel: ContactViewModel by viewModels()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -37,6 +32,7 @@ class ProfileFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        // get passed data from navigation "SafeArgs"
         arguments?.let {
             val safeargs = ProfileFragmentArgs.fromBundle(it)
             val contact = safeargs.contactProfile
@@ -57,6 +53,7 @@ class ProfileFragment : Fragment() {
         favSelected()
     }
 
+    // handle favorite button
     private fun favSelected() {
         binding.ivFav.setOnClickListener {
             binding.ivFav.isSelected = !binding.ivFav.isSelected

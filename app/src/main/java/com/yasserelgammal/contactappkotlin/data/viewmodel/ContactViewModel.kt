@@ -9,7 +9,9 @@ import com.yasserelgammal.contactappkotlin.data.model.Person
 import com.yasserelgammal.contactappkotlin.data.repository.ContactRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-
+/*
+Main view model with handle connection between repository and view
+*/
 class ContactViewModel(application: Application) : AndroidViewModel(application) {
 
     private val contactDao = ContactDatabase.getDatabase(application).contactDao()

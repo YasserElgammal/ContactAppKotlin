@@ -2,6 +2,9 @@ package com.yasserelgammal.contactappkotlin.ui.fragments.list
 
 import com.yasserelgammal.contactappkotlin.data.model.Person
 
+/*
+interface to handle recycle clicks
+*/
 interface ContactRecycleInteraction {
 
     fun onItemSelected(position: Int, item: Person)

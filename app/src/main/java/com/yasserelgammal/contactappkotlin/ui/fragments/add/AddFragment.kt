@@ -50,7 +50,9 @@ class AddFragment : Fragment(){
         _binding = null
     }
 
+    // get data from fields and insert
     private fun getDataToInsert(){
+
             val cName = binding.inputLayoutName.editText?.text.toString().trim()
             val cPhone = binding.iLayoutPhone.editText?.text.toString().trim()
             val cTitle = binding.iLayoutTitle.editText?.text.toString().trim()
@@ -69,7 +71,7 @@ class AddFragment : Fragment(){
         }
 
     }
-
+        // toggle function between drawable
         private fun drawableSelected(){
             binding.apply {
 

@@ -5,6 +5,9 @@ import android.text.TextUtils
 import androidx.lifecycle.AndroidViewModel
 import com.yasserelgammal.contactappkotlin.data.model.Group
 
+/*
+common & shared functions
+*/
 class SharedViewModel(application: Application): AndroidViewModel(application) {
 
     val items = listOf("Family", "Friends", "Work")

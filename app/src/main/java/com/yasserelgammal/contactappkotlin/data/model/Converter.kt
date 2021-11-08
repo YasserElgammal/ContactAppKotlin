@@ -2,6 +2,9 @@ package com.yasserelgammal.contactappkotlin.data.model
 
 import androidx.room.TypeConverter
 
+/* to convert group type / from it's type / to / string
+ to handle it with room
+ */
 class Converter {
 
     @TypeConverter

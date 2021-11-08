@@ -5,7 +5,7 @@ import android.content.Context
 import pub.devrel.easypermissions.EasyPermissions
 
 object CallUtility {
-
+    // handle permissions
     fun hasCallPermission(context: Context) =
             EasyPermissions.hasPermissions(
                 context,

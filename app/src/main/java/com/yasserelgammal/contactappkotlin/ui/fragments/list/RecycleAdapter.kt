@@ -8,6 +8,9 @@ import com.yasserelgammal.contactappkotlin.data.model.Person
 import com.yasserelgammal.contactappkotlin.databinding.ItemRowBinding
 import com.yasserelgammal.contactappkotlin.ui.fragments.common.ContactDiffUtil
 
+/*
+Main recyclerview adapter
+ */
 class RecycleAdapter(private var interaction: ContactRecycleInteraction): RecyclerView.Adapter<RecycleAdapter.RecycleViewHolder> (){
     private var oldContacts = emptyList<Person>()
 
